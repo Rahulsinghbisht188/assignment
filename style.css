@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #4e89ae;
+    --secondary-color: #43658b;
+    --text-color: #333;
+    --padding: 2rem;
+    --gap: 1.5rem;
+    font-size: 16px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: #f9f9f9;
+  }
+  
+  header {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2e3d59;
+  }
+  
+  .services, .about, .contact {
+    padding: var(--padding);
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: var(--gap);
+    margin-top: var(--gap);
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
